@@ -1,0 +1,455 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head></head>
+<body>
+  <h1>Create / Edit User</h1>
+
+  <p>This screen allow you to set each User's privileges as well as login as the user or reset and e-mail a
+  new password to them:</p>
+
+  <table class="field">
+    <tbody>
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>
+          <h3>User Account ID</h3>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Username:</td>
+
+        <td>Enter the name that this User will be known as throughout the system. &nbsp;It must be a unique value among all other User
+        accounts.  Users can login with their email address or username.</td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>
+          <h3>Send User to a Specific Page on Login</h3>
+        </td>
+      </tr>
+
+      <tr>
+        <td>User Start Page:</td>
+
+        <td>When this User logs in, if they are not attempting to access a Page or File,
+        they will be taken to this Page.<br />
+        <br />
+        TIP: This feature is useful, for example,&nbsp; if you what all of your staff to
+        login through a Login Page and go directly to your staff portal home page.
+        &nbsp;You can also set this value whenever a Customer orders a particular
+        Product.<br />
+        <br />
+        <span style="font-weight: bold;">None:</span> If the Role is not "User", and they
+        are not logging in to access any restricted Page or File, they will be directed
+        to the "Welcome" page of the Control Panel upon log in.</td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>
+          <h3>Email for Login &amp; Password Retrieval</h3>
+        </td>
+      </tr>
+
+      <tr>
+        <td>User E-mail Address:</td>
+
+        <td>Enter this User's e-mail address. Users can login with their email address or username.<br />
+        <br />
+        NOTE: Each User must have an e-mail address and the e-mail address must be
+        different from all other User's e-mail addresses. the system uses this e-mail
+        address to send their temporary password, and also to associate the User with
+        their (optional) Contact for pre-filling Custom Form Pages, My Account Pages, and
+        Commerce Pages.</td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>
+          <h3>Set Default Privileges for User Account</h3>
+        </td>
+      </tr>
+
+      <tr>
+        <td>User Role:</td>
+
+        <td>The Role sets the level of privileges for this User.<br />
+        <br />
+        NOTE: If you select "Administrator", "Designer", or "Manager",&nbsp;the remaining
+        fields on this screen are hidden because these roles include all "User"
+        privileges. The Site Settings and Site Log buttons will be visible on the Welcome
+        Page.<br />
+        <br />
+        For "Designers", the [DESIGN] tab will be visible to this User in the Control
+        Panel.</td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>
+          <h3>Content Management &amp; Forms Management Rights</h3>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Allow User to view and edit pages, files, and custom forms within selected
+        folders:</td>
+
+        <td>Select the website Folders that this User will have "edit" access to.
+        &nbsp;All Pages and Files placed in the selected Folders can be managed by the
+        User. The [FOLDERS], [PAGES], and [FILES] tabs will be visible to this User in
+        the Control Panel.</td>
+      </tr>
+
+      <tr>
+        <td>Also allow User to create/duplicate pages in selected folders:</td>
+
+        <td>For the Folders selected (above), allow this User to also create and
+        duplicate Pages.<br />
+        <br />
+        NOTE: If this is unchecked then the User will only be able to modify existing
+        Pages that they have "edit" access to. They will be unable to create new
+        Pages.</td>
+      </tr>
+
+      <tr>
+        <td>Also allow User to delete pages in selected folders:</td>
+
+        <td>For the Folders selected (above), allow this User to also delete Pages.<br />
+        <br />
+        NOTE: If this is unchecked then the User will only be able to modify existing
+        Pages that they have "edit" access to. They will be unable to delete Pages.</td>
+      </tr>
+
+      <tr>
+        <td>Also allow User to access submitted form data for selected folders:</td>
+
+        <td>For the Folders selected (above), allow this User to also manage any
+        Submitted Forms collected. The [FORMS] tab will be visible to this User in the
+        Control Panel.</td>
+      </tr>
+
+      <tr>
+        <td>Allow User to set the following page types for pages:</td>
+
+        <td>Select the Page Types that this User will be able to set for their Pages.
+        This can be used to prevent a User from creating certain Page Types if they
+        should not need too.<br />
+        <br />
+        NOTE: All Users have access to the Standard Page Type if they have "edit" access
+        to the Page's Folder.</td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>
+          <h3>Shared Content Management Rights</h3>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Allow User to edit the content within the selected Common Regions:</td>
+
+        <td>Select the Common Regions that this User will have "edit" access to.<br />
+        <br />
+        IMPORTANT: Since edit access to shared content is only allowed through editing a
+        Page (if not a Manager Role), this feature requires that the User has edit access
+        to at least one Folder that contains a Page that is associated with a Page Style
+        that includes the Common Region.</td>
+      </tr>
+
+      <tr>
+        <td>Allow User to edit Menu Items within the selected Menus:</td>
+
+        <td>Select the Menus that this User will have "edit" access to.<br />
+        <br />
+        NOTE: This feature gives the User access to edit the Menu Item's but not the Menu
+        Properties.<br />
+        <br />
+        IMPORTANT: Since edit access to shared content is only allowed through editing a
+        Page (if not a Manager Role), this feature requires that the User has edit access
+        to at least one Folder that contains a Page that is associated with a Page Style
+        that includes the Menu Region.</td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>
+          <h3>Calendar Management Rights</h3>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Allow User to add events to one or more calendars:</td>
+
+        <td>Check this box if you would like this User to have access to manage all
+        Calendar Events for the Calendars you select. &nbsp;The [CALENDARS] tab will be
+        visible to this User in the Control Panel.</td>
+      </tr>
+
+      <tr>
+        <td>Also allow User to publish calendar events for selected calendars:</td>
+
+        <td>For the Calendars selected (above), allow this User to also publish Calendar
+        Events. In addition, if this field is checked, the User will be able to edit
+        Calendar Events that have been published.</td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>
+          <h3>Visitor Report Management Rights</h3>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Allow User to manage all visitor reports:</td>
+
+        <td>Check this box if you would like this User to have access to create and view
+        all Visitor Reports. The [VISITOR] tab will be visible to this User in the
+        Control Panel.</td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>
+          <h3>Contact Management &amp; Campaign Management Rights</h3>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Allow User to view, edit, import, and export all contacts within any selected
+        contact groups:</td>
+
+        <td>Check this box if you would like this User to have access to manage the
+        Contacts in one or more Contact Groups that you select.&nbsp;The [CONTACTS] tab
+        will be visible to this User in the Control Panel.</td>
+      </tr>
+
+      <tr>
+        <td>Allow User to send e-mail campaigns to any selected contact groups:</td>
+
+        <td>Check this box if you would like this User to have access to create and send
+        &nbsp;e-mail campaigns to one or more Contact Groups that you select.&nbsp;The
+        [CAMPAIGNS] tab will be visible to this User in the Control Panel.</td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>
+          <h3>Commerce Management Rights</h3>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Allow User to manage all commerce (i.e. products, shipping, tax, and
+        orders):</td>
+
+        <td>Check this box if you would like this User to have access to manage all
+        e-commerce features. &nbsp;The [COMMERCE] tab will be visible to this User in the
+        Control Panel.</td>
+      </tr>
+
+      <tr>
+        <td>Also allow User to view card data:</td>
+
+        <td>Check this box if you would like this User to be able to view credit/debit
+        card numbers and verification numbers. If the User is not allowed to view card
+        data then the card number and verification number will be protected (i.e. starred
+        out except for the last 4 digits of the card number). The User will be able to
+        see the card type, cardholder, and expiration date regardless of whether this
+        check box is checked or not.<br />
+        <br />
+        Card data is only stored if your site is not using a payment gateway. Card data
+        can appear on the view order and view order report screens and in order
+        exports.<br />
+        <br />
+        Please see the Payment Card Industry Data Security Standard (PCI DSS) for
+        information about who is allowed to view card data.</td>
+      </tr>
+
+      <tr>
+        <td>Allow User to set offline payment option for orders:</td>
+
+        <td>Check this box if you would like this User to have access to enable and
+        disable the "Allow Offline Payments" feature for specific orders.<br />
+        <br />
+        NOTE: Users who have access to "Allow User to set offline payment option for
+        orders" will be able to enable and disable this feature for orders as needed by
+        selecting the "Allow offline payment option for this Cart" while on the Shopping
+        Cart or Express Order Pages.</td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>
+          <h3>Ads Management Rights</h3>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Allow User to manage Ads within the selected Ad Regions:</td>
+
+        <td>Select the Ad Regions that this User will have "edit" access to. The [ADS]
+        tab will be visible to this User in the Control Panel.<br />
+        <br />
+        NOTE: In order for the User to also edit the Ad Region Properties, be sure that
+        the User has edit access to at least one Folder that has a Page that is
+        associated with a Page Style that includes the Ad Region.</td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>
+          <h3>Private Content Access Rights</h3>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Allow User to view pages, files, and submit custom forms within selected
+        private folders:</td>
+
+        <td>Select the website Folders that this User will have "view" access to.
+        &nbsp;All Pages and Files placed in the selected Folders can be viewed (not
+        edited) by the User.<br />
+        <br />
+        Once you check a Folder, you will have the option of entering an expiration date
+        in case you only want to grant access for a certain period of time. You may leave the field blank if
+        you want the access to be granted indefinitely. The expiration date should be the
+        last day that you want the User to still be able to access the content. After the
+        expiration date, access will be automatically removed and the date will appear in
+        red. If the User attempts to access the content after the expiration date, then
+        he/she will receive an error that explains that his/her access has expired.<br />
+        <br />
+        TIP: Use this feature to allow access to select Users, for example, to allow only
+        your employees to access a staff-only portal area of your website. &nbsp;Simply
+        create a Private Folder for each group, and assign access to certain Users.<br />
+        <br />
+        TIP: These Folders can also be set when a Customer orders a Product that has it's
+        "Grant Private Access to Customer" feature set.</td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>
+          <h3>Badge</h3>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Show badge next to username:</td>
+
+        <td>Badges provide a way for you to label certain Users as "special". Your site's
+        default badge is defined in the Site Settings, and can be assigned to any User. Badges
+        will appear next to the User's name whenever they post information that is
+        displayed on your site.<br />
+        <br />
+        Badges for each User are added or removed from their username automatically
+        across the site instantly when this option is changed.</td>
+      </tr>
+
+      <tr>
+        <td>Badge Label:</td>
+
+        <td>If you want this User to have a specific badge that is different from the default that is set in the Site Settings, then you may enter it here.  Leave this field blank if you want this User to have the default badge label.</td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>
+          <h3>Reward Program</h3>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Reward Points:</td>
+
+        <td>If you enable the Reward Program feature in Site Settings, and this User has
+        ordered any Products that have reward points, then this field will contain the
+        accumulated total of reward points for this User.<br />
+        <br />
+        TIP: You can adjust (or reset to zero) the number of reward points for this User
+        at any time if necessary.</td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+
+        <td>
+          <h3>Notify User</h3>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Send email with login info to User:</td>
+
+        <td>
+          <p>
+            Check this field if you want the system to send an email to the User with their login info, including their temporary password, right after you create the User.  This will allow the User to login to the system.  Alternatively, if you want to manually communicate with the User about their login info, then uncheck this field.  The system will tell you the temporary password for the User, on the next screen, regardless of whether you check this field or not.
+          </p>
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+
+  <br />
+
+  <h2>Login as User</h2>
+
+  <p>
+    When editing a User, you can click the "Login as User" button in the button bar in order to easily login as the User without having to enter the User's login info.  You might want to do this in order to test the site as a less-privileged User in order to make sure everything is setup properly.  Also, this can be useful if you want to perform an action for a User (e.g. submit an Order) and have everything be saved to that User's account instead of your own.  
+  </p>
+
+  <p>
+    Once you click the "Login as User" button, you will be forwarded to the start screen for that User, just as if the User had logged in.  You will then experience the site exactly as that User would.  This means that the control panel toolbar might not appear, depending on the User's access level, or etc.  Once you are done with that User's account, you may logout.
+  </p>
+  <p>
+    If you selected to be remembered when you originally logged in with your own account, the system will automatically log you back in to your own account.  However, if you did not select to be remembered, then you will need to login to your own account again.  Either way, simply click the login link that appears on the logout screen.
+  </p>
+
+  <p>
+    Please be aware of the following:
+  </p>
+
+  <ul>
+    <li>As long as a User is allowed to edit a specific User, then the User can also login as that specific User.</li>
+    <li>The "Login as User" button will not appear for the User that you are currently logged in with.</li>
+    <li>The Site Log keeps track of which Users are logging in as different Users.</li>
+    <li>When you complete actions under the different User account, log messages, last modified stats, and etc. will contain the username for the different User (not your own account).</li>
+    <li>Your session will be reset when you login as a different User.  This means that the system will forget various settings from that browser session (e.g. search keyword and sort column on various view screens).</li>
+    <li>If you have a tracking code or affiliate code cookie, then they will be removed when you login as a different User.  Also, they will not be added back once you logout of that User's account.</li>
+    <li>If a User's account currently has a temporary password (e.g. the account was recently created), you will not be required to change the temporary password when you login as that User.  However, the User will still be required to change the password when he/she logs in as him/herself.</li>
+  </ul>
+
+  <p><br />
+  WARNING: If you create a User with the same e-mail address as an existing Contact, no
+  connection between the two will be made by the system. If you do this by mistake, you
+  can delete the Contact and ask the User to register again, so that a new Contact can be
+  created by the System and connected to the User. You can reference the "My Contacts by
+  User" and "My Registered User" screens to display all connected Contacts and User
+  accounts.</p>
+</body>
+</html>

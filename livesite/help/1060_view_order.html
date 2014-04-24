@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head></head>
+<body>
+<h1>View Order</h1>
+<p>This screen displays the details of a single Order.</p>
+<p>Orders are the collection of information about a complete or incomplete e-commerce transaction.</p>
+
+<h2>Ship Date</h2>
+
+<p>
+    If an Order requires Shipping, then a ship date field will appear. The ship date is automatically calculated at the point of purchase and stored in the ship to.  It is the date that the system recommends you ship items for a ship to in order for those items to be delivered to the recipient by the requested Arrival Date.  You can update the ship date at any time via this screen.  The ship date is calculated differently based on the requested Arrival Date.
+</p>
+
+<p>
+    <strong>For "At Once":</strong> If the Order is submitted before the "end of day time" in the site settings, then the calculation starts with the Order date.  Otherwise, if the Order is submitted after the "end of day time", then calculation starts with the day after the Order date.  Then, the greatest preparation time for all Products in the ship to is added to that starting date to determine the ship date.
+</p>
+
+<p>
+    <strong>For an Arrival Date in the future:</strong> The system calculates the transit time for the Shipping Method and applies that backwards from the requested Arrival Date.  The transit time = Shipping Method Base Transit Days + Transit Adjustment Days for recipient's Country (if Adjust Transit for Country is enabled in Shipping Method).  Also, Excluded Transit Dates, Transit on Sunday, and Transit on Saturday settings for the Shipping Method are taken into account when calculating the transit time.
+</p>
+
+<p>
+    Please be aware that if you change transit time settings in Shipping Methods and Countries, the ship date for past Orders will not be updated automatically.  If necessary, you can manually update the ship date.  However, the new settings will automatically be used for future Orders.
+</p>
+
+<p>
+    The ship date is purely for your own use.  The ship date is never displayed to the customer.  It is used by the shipping report screen in order to determine how many Products need to be shipped on a certain date.  You can remove the ship date if you don't want data from a ship to to appear on the shipping report.  You can also update the date range type to "Ship Date" on the all orders screen to view Orders that contain a ship date in a certain date range.
+</p>
+
+<h2>Tracking Numbers</h2>
+
+<p>If an Order requires shipping, you may insert one or more tracking numbers for each Ship To. You should enter one tracking number per line in the field. The tracking numbers will then appear on the view order screen in the my account area for the Customer. If the tracking number is from UPS, FedEx, or USPS, then the tracking number will be linked to a status page on the carrier's website.</p>
+
+<h2>Shipped Quantity</h2>
+
+<p>If you initially only shipped some of the items that the Customer ordered (e.g. a product is out of stock), then you might want to update the shipped quantity to indicate to the Customer how many items were shipped. The ordered quantity and the shipped quantity will then appear on the view order screen in the my account area for the Customer. Once you have shipped the rest of the items to the Customer, then you can update the shipped quantity again to show that all items have been shipped. You can either leave this field blank so a shipped quantity does not appear to the Customer or you can enter any number that is greater than or equal to 0.</p>
+
+<p>
+    The shipped quantity that you enter here will also affect the shipping report screen.  You can update the shipped quantity to match the ordered quantity once all items are shipped.  This will result in data no longer appearing for an item on the shipping report screen.  Also, once you have done this for all items in the Order, it will also result in the Order's shipping status being considered "Shipped" on the All Orders screen.
+</p>
+
+<h2>Packing Slip</h2>
+
+<p>If the Order contains shippable items then you can click the printer icon for each recipient in order to print a packing slip. A pop-up window will appear with the packing slip and the print dialog will automatically appear. A packing slip can be included in the shipment in order to inform the recipient about what is included in the shipment. The quantity that appears on the packing slip is the ordered quantity. Shipped quantity does not appear on the packing slip.</p>
+
+<br />
+
+<p>NOTE: If you are viewing sensitive customer/payment information on this screen, then it is recommended that your site have an SSL certificate and that secure mode be enabled. Please contact your hosting provider for more information about an SSL certificate, and please see the Site Settings for more information about secure mode.</p>
+</body>
+</html>
