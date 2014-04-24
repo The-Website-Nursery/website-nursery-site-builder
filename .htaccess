@@ -1,0 +1,24 @@
+# The following rules are used by liveSite.
+
+RewriteEngine on
+
+# When the system is accessed from a sub-directory with an Apache alias
+# (e.g. http://192.168.0.1/~example/), then you might need to uncomment the line
+# below and update it to point to where the system is installed.  The system
+# will attempt to automatically set the correct value for the line below during
+# installation.  You might need to comment out the line below once you launch
+# your site at a permanent URL without a sub-directory (e.g. http://www.example.com).
+
+#RewriteBase /~example/
+
+# The following rule enables search engine friendly URL's for Pages.
+RewriteRule ^pages/(.*) livesite/get_page.php?page=$1&%{QUERY_STRING}
+
+# The following rule enables search engine friendly URL's for Files.
+RewriteRule ^files/(.*) livesite/get_file.php?name=$1
+
+# The following rule enables the robots.txt file which helps search engines crawl a website.
+RewriteRule ^robots\.txt$ livesite/get_robots.txt.php
+
+# The following rule enables the sitemap.xml file which helps search engines find content.
+RewriteRule ^sitemap\.xml$ livesite/get_sitemap.xml.php
